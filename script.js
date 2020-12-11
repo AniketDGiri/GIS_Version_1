@@ -40,6 +40,7 @@ window.onload = () => {
 
         // than use it to load from remote APIs some places nearby
         loadPlaces(position.coords)
+        console.log(places);
             .then((places) => {
                 places.forEach((place) => {
                     const latitude = place.location.lat;
