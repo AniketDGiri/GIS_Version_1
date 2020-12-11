@@ -34,13 +34,13 @@ function loadPlaces(position) {
 
 window.onload = () => {
     const scene = document.querySelector('a-scene');
-
+ console.log(places);
     // first get current user location
     return navigator.geolocation.getCurrentPosition(function (position) {
 
         // than use it to load from remote APIs some places nearby
         loadPlaces(position.coords)
-        console.log(places);
+       
             .then((places) => {
                 places.forEach((place) => {
                     const latitude = place.location.lat;
