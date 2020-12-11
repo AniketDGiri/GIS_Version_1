@@ -1,59 +1,8 @@
-window.onload = () => {
-    let method = 'dynamic';
-
-    // if you want to statically add places, de-comment following line
-    method = 'static';
-
-    if (method === 'static') {
-        let places = staticLoadPlaces();
-        renderPlaces(places);
-    }
-
-    if (method !== 'static') {
-
-        // first get current user location
-        return navigator.geolocation.getCurrentPosition(function (position) {
-
-            // than use it to load from remote APIs some places nearby
-            dynamicLoadPlaces(position.coords)
-                .then((places) => {
-                    renderPlaces(places);
-                })
-        },
-            (err) => console.error('Error in retrieving position', err),
-            {
-                enableHighAccuracy: true,
-                maximumAge: 0,
-                timeout: 27000,
-            }
-        );
-    }
-};
-
-function staticLoadPlaces() {
-    return [
-        {
-            name: "Your place name",
-            location: {
-                lat: 0, // add here latitude if using static data
-                lng: 0, // add here longitude if using static data
-            }
-        },
-        {
-            name: 'Another place name',
-            location: {
-                lat: 0,
-                lng: 0,
-            }
-        }
-    ];
-}
-
 
 // getting places from APIs
 function loadPlaces(position) {
     const params = {
-        radius: 300,    // search places not farther than this value (in meters)
+        radius: 1000,    // search places not farther than this value (in meters)
         clientId: '<CWD4TKLPKVYFPKDV5ZP4QIO5OL41IQOJGQETAVR5YKZKTXN1>',
         clientSecret: 'WMI044EDI4CKGBLOVYUCGP00ISJK0QVJKXDIKKAA1DFRY4NB',
         version: '20300101',    // foursquare versioning, required but unuseful for this demo
