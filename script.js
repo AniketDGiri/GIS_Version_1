@@ -15,7 +15,7 @@ window.onload = () => {
         return navigator.geolocation.getCurrentPosition(function (position) {
 
             // than use it to load from remote APIs some places nearby
-            dynamicLoadPlaces(position.coords)
+            let places = dynamicLoadPlaces(position.coords)
                 .then((places) => {
                     renderPlaces(places);
                 })
