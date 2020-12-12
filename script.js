@@ -8,14 +8,16 @@ window.onload = () => {
         let places = staticLoadPlaces();
         renderPlaces(places);
     }
-    console.log("Hello");
+    
     if (method !== 'static') {
 
         // first get current user location
         return navigator.geolocation.getCurrentPosition(function (position) {
 
             // than use it to load from remote APIs some places nearby
-            let places = dynamicLoadPlaces(position.coords)
+            console.log("In dynamic ");
+            
+            let places = dynamicLoadPlaces(position.coords);
                 .then((places) => {
                     renderPlaces(places);
                 })
