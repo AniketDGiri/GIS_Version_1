@@ -129,6 +129,7 @@ function renderPlaces(places) {
         };
 
         icon.addEventListener('click', function(){
+              console.log("I have clicked on icon");
             alert('This is another area');
         });
 
