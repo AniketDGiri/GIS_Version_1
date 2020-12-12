@@ -2,13 +2,13 @@ window.onload = () => {
     let method = 'dynamic';
 
     // if you want to statically add places, de-comment following line
-    method = 'static';
+    //method = 'static';
 
     if (method === 'static') {
         let places = staticLoadPlaces();
         renderPlaces(places);
     }
-
+    console.log("Hello");
     if (method !== 'static') {
 
         // first get current user location
@@ -87,6 +87,9 @@ function renderPlaces(places) {
     places.forEach((place) => {
         const latitude = place.location.lat;
         const longitude = place.location.lng;
+        
+         console.log(latitude);
+         console.log(latitude);
 
         // add place icon
         const icon = document.createElement('a-image');
