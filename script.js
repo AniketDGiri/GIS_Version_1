@@ -17,7 +17,7 @@ window.onload = () => {
             // than use it to load from remote APIs some places nearby
             console.log("In dynamic ");
             
-            let places = dynamicLoadPlaces(position.coords)
+             dynamicLoadPlaces(position.coords)
                 .then((places) => {
                     renderPlaces(places);
                 })
@@ -55,8 +55,8 @@ function staticLoadPlaces() {
 function dynamicLoadPlaces(position) {
     let params = {
         radius: 300,    // search places not farther than this value (in meters)
-        clientId: 'HZIJGI4COHQ4AI45QXKCDFJWFJ1SFHYDFCCWKPIJDWHLVQVZ',   // add your credentials here
-        clientSecret: '',   // add your credentials here
+        clientId: 'CWD4TKLPKVYFPKDV5ZP4QIO5OL41IQOJGQETAVR5YKZKTXN1',   // add your credentials here
+        clientSecret: 'WMI044EDI4CKGBLOVYUCGP00ISJK0QVJKXDIKKAA1DFRY4NB',   // add your credentials here
         version: '20300101',    // foursquare versioning, required but unuseful for this demo
     };
 
