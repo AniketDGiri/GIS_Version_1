@@ -17,7 +17,7 @@ window.onload = () => {
             // than use it to load from remote APIs some places nearby
             console.log("In dynamic ");
             
-            let places = dynamicLoadPlaces(position.coords);
+            let places = dynamicLoadPlaces(position.coords)
                 .then((places) => {
                     renderPlaces(places);
                 })
