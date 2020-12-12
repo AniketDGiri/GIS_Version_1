@@ -127,7 +127,7 @@ function renderPlaces(places) {
                 }, 1500);
             }
         };
-
+        console.log("before clicking");
         icon.addEventListener('click', function(){
               console.log("I have clicked on icon");
             alert('This is another area');
