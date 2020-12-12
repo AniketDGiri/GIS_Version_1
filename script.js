@@ -128,7 +128,9 @@ function renderPlaces(places) {
             }
         };
 
-        icon.addEventListener('click', clickListener);
+        icon.addEventListener('click', function(){
+            alert('This is another area');
+        });
 
         scene.appendChild(icon);
     });
