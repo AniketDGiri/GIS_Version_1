@@ -94,6 +94,7 @@ function renderPlaces(places) {
          console.log(longitude);
 
         // add place icon
+        console.log(place.name);
         const icon = document.createElement('a-image');
         icon.setAttribute('gps-entity-place', `latitude: ${latitude}; longitude: ${longitude}`);
         icon.setAttribute('name', place.name);
