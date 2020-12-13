@@ -97,7 +97,7 @@ function renderPlaces(places) {
         console.log(place.name);
         const icon = document.createElement('a-image');
         icon.setAttribute('gps-entity-place', `latitude: ${latitude}; longitude: ${longitude}`);
-        icon.setAttribute('name', place.name);
+        icon.setAttribute('name', 'place.name');
         icon.setAttribute('src', './marker.jpg');
         icon.setAttribute('href', 'https://stackoverflow.com/questions/13674031/how-to-get-the-top-10-values-in-postgresql');
         
