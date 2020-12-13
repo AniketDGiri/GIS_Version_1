@@ -104,7 +104,7 @@ function renderPlaces(places) {
         text.addEventListener('loaded', () => {
             window.dispatchEvent(new CustomEvent('gps-entity-place-loaded'))
         });
-
+        console.log("Text is set");
         scene.appendChild(text);
         
         
