@@ -130,10 +130,7 @@ function renderPlaces(places) {
             }
         };
         console.log("before clicking");
-        icon.addEventListener('click', function(){
-              console.log("I have clicked on icon");
-            alert('This is another area');
-        });
+        icon.addEventListener('click', clickListener);
 
         scene.appendChild(icon);
     });
