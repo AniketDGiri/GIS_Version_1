@@ -145,7 +145,7 @@ function renderPlaces(places) {
                 }, 1500);
             }
         };
-        console.log("before clicking");
+        console.log("before clicking.....");
         icon.addEventListener('click', clickListener);
 
         scene.appendChild(icon);
