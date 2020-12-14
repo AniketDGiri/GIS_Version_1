@@ -58,6 +58,14 @@ function staticLoadPlaces() {
             });
             //aframe over
         }});
+
+AFRAME.registerComponent('clickhandler', {
+        init: function() {
+            this.el.addEventListener('click', () => {
+                alert('Clicked!')
+            });
+            //aframe over
+        }});
             
             
 
