@@ -51,6 +51,15 @@ function staticLoadPlaces() {
     ];
 }
 
+  AFRAME.registerComponent('clickhandler', {
+        init: function() {
+            this.el.addEventListener('touchstart', () => {
+                alert('Clicked!')
+            });
+            //aframe over
+            
+            
+
 // getting places from REST APIs
 function dynamicLoadPlaces(position) {
     let params = {
@@ -146,16 +155,12 @@ function renderPlaces(places) {
             }
         };
         
-          AFRAME.registerComponent('clickhandler', {
-        init: function() {
-            this.el.addEventListener('touchstart', () => {
-                alert('Clicked!')
-            });
+        
     }});
         
         console.log("before clicking.....");
         icon.addEventListener('click',clickListener);
-
+        
         scene.appendChild(icon);
     });
 }
