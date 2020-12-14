@@ -154,7 +154,7 @@ function renderPlaces(places) {
     }});
         
         console.log("before clicking.....");
-        icon.addEventListener('click', clickhandler);
+        icon.addEventListener('click',clickhandler);
 
         scene.appendChild(icon);
     });
