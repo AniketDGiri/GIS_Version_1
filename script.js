@@ -148,7 +148,7 @@ function renderPlaces(places) {
         
           AFRAME.registerComponent('clickhandler', {
         init: function() {
-            this.el.addEventListener('click', () => {
+            this.el.addEventListener('touchstart', () => {
                 alert('Clicked!')
             });
     }});
