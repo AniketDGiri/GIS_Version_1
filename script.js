@@ -145,8 +145,16 @@ function renderPlaces(places) {
                 }, 1500);
             }
         };
+        
+          AFRAME.registerComponent('clickhandler', {
+        init: function() {
+            this.el.addEventListener('click', () => {
+                alert('Clicked!')
+            });
+    }});
+        
         console.log("before clicking.....");
-        icon.addEventListener('click', clickListener);
+        icon.addEventListener('click', clickhandler);
 
         scene.appendChild(icon);
     });
