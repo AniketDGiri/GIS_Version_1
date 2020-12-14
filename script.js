@@ -57,6 +57,7 @@ function staticLoadPlaces() {
                 alert('Clicked!')
             });
             //aframe over
+        }});
             
             
 
@@ -156,7 +157,7 @@ function renderPlaces(places) {
         };
         
         
-    }});
+   
         
         console.log("before clcicking.....");
         icon.addEventListener('click',clickListener);
