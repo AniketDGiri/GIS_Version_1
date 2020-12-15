@@ -54,7 +54,7 @@ function staticLoadPlaces() {
   AFRAME.registerComponent('clickhandler', {
         init: function() {
             this.el.addEventListener('touchstart', () => {
-                alert(place.name)
+                alert('Clicked!')
             });
             //aframe over
         }});
