@@ -59,13 +59,13 @@ function staticLoadPlaces() {
             //aframe over
         }});
 
-AFRAME.registerComponent('clickhandler', {
+/*AFRAME.registerComponent('clickhandler', {
         init: function() {
             this.el.addEventListener('click', () => {
                 alert(latitude)
             });
             //aframe over
-        }});
+        }});*/
             
             
 
