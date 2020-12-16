@@ -112,6 +112,7 @@ function renderPlaces(places,position.coords) {
          console.log(longitude);
         
         //USER's LOCATION
+        console.log('User locatopn');
         console.log(position.coords.latitude);
          console.log(position.coords.longitude);
         
