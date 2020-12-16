@@ -199,7 +199,7 @@ function renderPlaces(places,position) {
         
    
         
-        console.log("before clcicking.....");
+        console.log("before ccclcicking.....");
         icon.addEventListener('click',clickListener);
         
         scene.appendChild(icon);
