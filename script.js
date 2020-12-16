@@ -131,17 +131,19 @@ function renderPlaces(places,position) {
          console.log(longitude);
         
         //USER's LOCATION
-        console.log('User locatooooqqqpn');
+        console.log('User locatoqqqpn');
         //console.log(position.latitude);
          //console.log(position.longitude);
-        var str=answer+""+place.name
-        console.log(str);
+        
         
         
         
         // NEW DISTANCE CODE ADDED
         answer=calcCrow(latitude,longitude,position.latitude,position.longitude);
         console.log(answer);
+        
+        var str=answer+""+place.name
+        console.log(str);
      
         
        
