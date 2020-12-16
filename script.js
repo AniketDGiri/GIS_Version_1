@@ -62,7 +62,7 @@ function staticLoadPlaces() {
 AFRAME.registerComponent('clickhandler', {
         init: function() {
             this.el.addEventListener('click', () => {
-                alert('Clicked!')
+                alert(latitude)
             });
             //aframe over
         }});
