@@ -131,7 +131,7 @@ function renderPlaces(places,position) {
          console.log(longitude);
         
         //USER's LOCATION
-        console.log('User locatoqqqpn');
+        console.log('User locatoqqoooooqpn');
         //console.log(position.latitude);
          //console.log(position.longitude);
         
