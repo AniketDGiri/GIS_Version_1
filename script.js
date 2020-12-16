@@ -54,7 +54,7 @@ function staticLoadPlaces() {
   AFRAME.registerComponent('clickhandler', {
         init: function() {
             this.el.addEventListener('touchstart', () => {
-                alert('Clicked!')
+                alert(latitude)
             });
             //aframe over
         }});
@@ -135,7 +135,7 @@ function renderPlaces(places) {
         icon.setAttribute('src', './marker.jpg');
         icon.setAttribute('href', 'https://stackoverflow.com/questions/13674031/how-to-get-the-top-10-values-in-postgresql');
         
-        console.log("Image Displayed");
+        console.log("Image Displayedddd");
 
         // for debug purposes, just show in a bigger scale, otherwise I have to personally go on places...
         icon.setAttribute('scale', '20, 20');
