@@ -142,7 +142,7 @@ function renderPlaces(places,position) {
         answer=calcCrow(latitude,longitude,position.latitude,position.longitude);
         console.log(answer);
         
-        var str=answer+""+place.name
+        var str=answer+" "+place.name
         console.log(str);
      
         
@@ -158,7 +158,7 @@ function renderPlaces(places,position) {
         let text = document.createElement('a-link');
         text.setAttribute('gps-entity-place', `latitude: ${latitude}; longitude: ${longitude};`);
         //text.setAttribute('title', place.name);
-        text.setAttribute('title', answer);
+        text.setAttribute('title', str);
         
         text.setAttribute('href', 'http://www.example.com/');
         text.setAttribute('scale', '25 25 25');
@@ -176,7 +176,7 @@ function renderPlaces(places,position) {
         const icon = document.createElement('a-image');
         icon.setAttribute('gps-entity-place', `latitude: ${latitude}; longitude: ${longitude}`);
         //icon.setAttribute('name', place.name);
-        icon.setAttribute('name', answer);
+        icon.setAttribute('name', str);
         icon.setAttribute('src', './marker.jpg');
         icon.setAttribute('href', 'https://stackoverflow.com/questions/13674031/how-to-get-the-top-10-values-in-postgresql');
         
