@@ -84,6 +84,7 @@ function staticLoadPlaces() {
         Math.sin(dLon/2) * Math.sin(dLon/2) * Math.cos(lat1) * Math.cos(lat2); 
       var c = 2 * Math.atan2(Math.sqrt(a), Math.sqrt(1-a)); 
       var d = R * c;
+      var d = d.toFixed(2);
       return d;
     }
 
@@ -133,6 +134,8 @@ function renderPlaces(places,position) {
         console.log('User locatooooqqqpn');
         //console.log(position.latitude);
          //console.log(position.longitude);
+        var str=answer+""+place.name
+        console.log(str);
         
         
         
