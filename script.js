@@ -101,7 +101,7 @@ function dynamicLoadPlaces(position) {
         })
 };
 
-function renderPlaces(places,position.coords) {
+function renderPlaces(places,position) {
     let scene = document.querySelector('a-scene');
 
     places.forEach((place) => {
@@ -113,8 +113,8 @@ function renderPlaces(places,position.coords) {
         
         //USER's LOCATION
         console.log('User locatopn');
-        console.log(position.coords.latitude);
-         console.log(position.coords.longitude);
+        console.log(position.latitude);
+         console.log(position.longitude);
         
         
         
