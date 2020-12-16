@@ -180,7 +180,7 @@ function renderPlaces(places,position) {
         icon.setAttribute('src', './marker.jpg');
         icon.setAttribute('href', 'https://stackoverflow.com/questions/13674031/how-to-get-the-top-10-values-in-postgresql');
         
-        console.log("Image Displayedddd");
+        console.log("Image Displayedd");
 
         // for debug purposes, just show in a bigger scale, otherwise I have to personally go on places...
         icon.setAttribute('scale', '30, 30');
