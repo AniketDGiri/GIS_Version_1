@@ -142,7 +142,7 @@ function renderPlaces(places,position) {
         answer=calcCrow(latitude,longitude,position.latitude,position.longitude);
         console.log(answer);
         
-        var str=answer+"/n"+place.name
+        var str=answer+"\n"+place.name
         console.log(str);
      
         
