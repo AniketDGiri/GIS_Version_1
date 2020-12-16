@@ -152,7 +152,9 @@ function renderPlaces(places,position) {
         // add place name
         let text = document.createElement('a-link');
         text.setAttribute('gps-entity-place', `latitude: ${latitude}; longitude: ${longitude};`);
-        text.setAttribute('title', place.name);
+        //text.setAttribute('title', place.name);
+        text.setAttribute('title', answer);
+        
         text.setAttribute('href', 'http://www.example.com/');
         text.setAttribute('scale', '15 15 15');
 
@@ -168,7 +170,8 @@ function renderPlaces(places,position) {
         console.log(place.name);
         const icon = document.createElement('a-image');
         icon.setAttribute('gps-entity-place', `latitude: ${latitude}; longitude: ${longitude}`);
-        icon.setAttribute('name', place.name);
+        //icon.setAttribute('name', place.name);
+        icon.setAttribute('name', answer);
         icon.setAttribute('src', './marker.jpg');
         icon.setAttribute('href', 'https://stackoverflow.com/questions/13674031/how-to-get-the-top-10-values-in-postgresql');
         
