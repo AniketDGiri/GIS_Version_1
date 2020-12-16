@@ -156,7 +156,7 @@ function renderPlaces(places,position) {
         text.setAttribute('title', answer);
         
         text.setAttribute('href', 'http://www.example.com/');
-        text.setAttribute('scale', '15 15 15');
+        text.setAttribute('scale', '25 25 25');
 
         text.addEventListener('loaded', () => {
             window.dispatchEvent(new CustomEvent('gps-entity-place-loaded'))
@@ -178,7 +178,7 @@ function renderPlaces(places,position) {
         console.log("Image Displayedddd");
 
         // for debug purposes, just show in a bigger scale, otherwise I have to personally go on places...
-        icon.setAttribute('scale', '20, 20');
+        icon.setAttribute('scale', '30, 30');
 
         icon.addEventListener('loaded', () => window.dispatchEvent(new CustomEvent('gps-entity-place-loaded')));
 
